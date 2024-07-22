@@ -29,15 +29,15 @@ function Footer() {
           <div className="flex flex-col gap-4">
             <p className="font-bold mb-1">Contacts</p>
             <div className="flex gap-2">
-              <MapPin />
+              <MapPin className="hover:fill-white hover:text-gray-10" />
               <p className="">1234 Sample Street Austin Texas 78704</p>
             </div>
             <div className="flex gap-2">
-              <Phone />
+              <Phone className="hover:fill-white" />
               <p>512.333.2222</p>
             </div>
             <div className="flex gap-2">
-              <Mail />
+              <Mail className="hover:fill-white hover:text-gray-10" />
               <p>sampleemail@gmail.com</p>
             </div>
           </div>
