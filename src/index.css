@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer{
+  .text-xxs{
+    @apply text-[0.65rem]
+  }
+}
