@@ -8,7 +8,7 @@ function Button({ text, isDark, className }: any) {
       }`}
     >
       {text}
-      <MoveRight className="h-5 w-4" strokeWidth="1px" />
+      <MoveRight className="h-5 w-4 hover:stroke-2" strokeWidth="1px" />
     </div>
   );
 }
