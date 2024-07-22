@@ -34,9 +34,9 @@ function Projects() {
       </div>
       <div className="flex flex-col gap-4">
         {projects.map((x) => (
-          <div className="flex gap-6 bg-gray-3">
+          <div className="flex flex-col md:flex-row gap-6 bg-gray-3 max-sm:pb-5 max-sm:border-b-[1px] max-sm:border-gray-1">
             <img src={`/assets/imgs/${x.img}.jpg`} alt={x.title} />
-            <div className="pe-8 flex flex-col justify-around">
+            <div className="pe-8 flex flex-col gap-2 justify-around">
               <h3 className="text-gray-4 text-2xl font-thin">{x.title}</h3>
               <p className="text-gray-9 text-balance text-xxs">
                 {x.description}
