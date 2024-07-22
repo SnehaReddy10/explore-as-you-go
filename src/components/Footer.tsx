@@ -44,11 +44,11 @@ function Footer() {
         </div>
         <div className="flex flex-col gap-4">
           <p className="font-bold mb-1">Social Media</p>
-          <div className="flex gap-4">
-            <Facebook />
-            <Twitter />
-            <Linkedin />
-            <Instagram />
+          <div className="flex gap-4 transition-all ease-in">
+            <Facebook className="hover:fill-white" />
+            <Twitter className="hover:fill-white" />
+            <Linkedin className="hover:fill-white" />
+            <Instagram className="hover:fill-white hover:text-gray-10" />
           </div>
         </div>
       </div>
