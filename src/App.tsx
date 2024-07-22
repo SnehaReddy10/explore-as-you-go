@@ -12,7 +12,7 @@ function App() {
   return (
     <div>
       <NavBar />
-      <div className="mx-28">
+      <div className="mx-3 lg:mx-14 xl:mx-28">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/gallery" element={<Gallery />} />

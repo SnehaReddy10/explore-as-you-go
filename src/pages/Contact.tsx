@@ -3,7 +3,7 @@ import Title from '../utils/Title';
 
 function Contact() {
   return (
-    <div className="flex gap-32 justify-between">
+    <div className="flex md:gap-32 justify-between">
       <div className="flex flex-col gap-4 text-xxs py-5">
         <div>
           <Title title="Contact" />

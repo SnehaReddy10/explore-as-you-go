@@ -50,9 +50,9 @@ function Gallery() {
         <Title title="Photo" />
         <Title title="gallery" isDark={true} />
       </div>
-      <div className="grid grid-cols-5 gap-2">
+      <div className="grid grid-cols-2 md:grid-cols-5 gap-1 md:gap-2">
         {photoGalleryImages.map((x) => (
-          <img src={`/assets/imgs/${x.link}.jpg`} className="h-72" />
+          <img src={`/assets/imgs/${x.link}.jpg`} className="h-56 md:h-72" />
         ))}
       </div>
     </div>

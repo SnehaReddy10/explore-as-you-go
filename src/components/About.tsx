@@ -3,7 +3,7 @@ import Title from '../utils/Title';
 
 function About() {
   return (
-    <div className="grid grid-cols-3 gap-4 items-center">
+    <div className="flex flex-col-reverse md:grid md:grid-cols-3 gap-4 items-center">
       <div className="flex flex-col gap-2">
         <img
           src="/assets/imgs/attraction2.jpg"
@@ -31,7 +31,9 @@ function About() {
           typeface without relying on meaningful content. Lorem ipsum may be
           used as a placeholder before the final copy is available.
         </p>
-        <Button text="Read more" />
+        <div className="max-md:flex max-md:justify-end">
+          <Button text="Read more" />
+        </div>{' '}
       </div>
     </div>
   );
