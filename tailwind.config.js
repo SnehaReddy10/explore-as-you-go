@@ -12,6 +12,9 @@ export default {
       'gray-10': '#2C2C2C',
       white: '#FFFFFF',
     },
+    animation: {
+      slideInRight: 'slideInRight 1s ease-in-out 1',
+    },
   },
   plugins: [],
 };
