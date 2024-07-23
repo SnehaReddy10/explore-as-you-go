@@ -23,7 +23,12 @@ function Projects() {
         <img src="/assets/imgs/attraction9.jpg" alt="attraction5" />
       </div>
       <div className="flex justify-end">
-        <Button text="All projects" isDark={true} className="" />
+        <Button
+          text="All projects"
+          isDark={true}
+          className=""
+          url={'projects'}
+        />
       </div>
     </div>
   );

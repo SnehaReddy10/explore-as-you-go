@@ -1,5 +1,8 @@
+import { projects } from '../static/Projects';
 import Button from '../utils/Button';
 import Title from '../utils/Title';
+
+const project = projects.find((x) => x.id == 1);
 
 function Hero() {
   return (
@@ -14,11 +17,15 @@ function Hero() {
       </div>
       <div className="relative col-span-2 h-full w-full md:h-[34rem] md:w-2/4">
         <img
-          src="/assets/imgs/attraction1.jpg"
+          src={`/assets/imgs/${project?.img}.jpg`}
           alt=""
           className="md:h-[34rem]"
         />
-        <Button text="view project" className="absolute bottom-0" />
+        <Button
+          text="view project"
+          className="absolute bottom-0"
+          url={`/projects/${project?.id}`}
+        />
       </div>
     </div>
   );
