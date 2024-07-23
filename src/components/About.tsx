@@ -8,19 +8,19 @@ function About() {
         <img
           src="/assets/imgs/attraction2.jpg"
           alt="attraction2"
-          className="h-72 w-full"
+          className="md:h-72 w-full"
         />
         <img
           src="/assets/imgs/attraction4.jpg"
           alt="attraction4"
-          className="h-32 w-full"
+          className="md:h-32 w-full"
         />
       </div>
       <div className="flex flex-col gap-2">
         <img
           src="/assets/imgs/attraction2.jpg"
           alt="attraction2"
-          className="h-80 w-full"
+          className="md:h-80 w-full"
         />
       </div>
       <div className="flex flex-col gap-4">
