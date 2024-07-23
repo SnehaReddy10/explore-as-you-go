@@ -1,6 +1,7 @@
 import { Menu } from 'lucide-react';
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import Logo from './Logo';
 
 const navItems = [
   {
@@ -30,9 +31,9 @@ function NavBar() {
   const [openMenu, setOpenMenu] = useState(false);
 
   return (
-    <div className="flex justify-between my-4 md:mx-40">
+    <div className="flex items-center justify-around my-4 md:mx-40">
       <div>
-        <img src="" alt="" />
+        <Logo isDark={true} />
       </div>
       <div className="hidden mx-4 md:flex md:gap-4">
         {navItems.map((x) => {
