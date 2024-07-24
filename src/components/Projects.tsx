@@ -1,9 +1,21 @@
+import { useEffect } from 'react';
 import Button from '../utils/Button';
 import Title from '../utils/Title';
+import 'aos/dist/aos.css';
+import Aos from 'aos';
 
 function Projects() {
+  useEffect(() => {
+    Aos.init();
+  }, []);
+
   return (
-    <div className="flex flex-col gap-3 overflow-hidden">
+    <div
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in"
+      className="flex flex-col gap-3 overflow-hidden"
+    >
       <Title title="Our Projects" />
       <div className="grid grid-cols-2 gap-2">
         <img

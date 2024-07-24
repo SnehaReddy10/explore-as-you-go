@@ -1,9 +1,21 @@
 import Button from '../utils/Button';
 import Title from '../utils/Title';
+import { useEffect } from 'react';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 function Contact() {
+  useEffect(() => {
+    Aos.init();
+  });
+
   return (
-    <div className="flex max-sm:flex-col md:gap-32 justify-between">
+    <div
+      data-aos="fade-in"
+      data-aos-duration="2000"
+      data-aos-easing="ease-out"
+      className="flex max-sm:flex-col md:gap-32 justify-between"
+    >
       <div className="flex flex-col gap-4 text-xxs py-5">
         <div>
           <Title title="Contact" />

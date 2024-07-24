@@ -6,7 +6,7 @@ const project = projects.find((x) => x.id == 1);
 
 function Hero() {
   return (
-    <div className="flex flex-col md:flex-row gap-3 md:gap-0 justify-between my-2">
+    <div className="flex flex-col animate-fadeIn md:flex-row gap-3 md:gap-0 justify-between my-2">
       <div className="md:h-screen flex flex-col justify-center">
         <Title className="col-span-1 w-full md:w-1/4" title="EXPLORE" />
         <Title

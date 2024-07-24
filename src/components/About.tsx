@@ -1,9 +1,21 @@
+import { useEffect } from 'react';
 import Button from '../utils/Button';
 import Title from '../utils/Title';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 function About() {
+  useEffect(() => {
+    Aos.init();
+  }, []);
+
   return (
-    <div className="flex flex-col-reverse md:grid md:grid-cols-3 gap-4 items-center">
+    <div
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in"
+      className="flex flex-col-reverse md:grid md:grid-cols-3 gap-4 items-center"
+    >
       <div className="flex flex-col gap-2">
         <img
           src="/assets/imgs/attraction2.jpg"

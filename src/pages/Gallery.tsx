@@ -1,4 +1,7 @@
+import { useEffect } from 'react';
 import Title from '../utils/Title';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const photoGalleryImages = [
   {
@@ -44,15 +47,24 @@ const photoGalleryImages = [
 ];
 
 function Gallery() {
+  useEffect(() => {
+    Aos.init();
+  });
+
   return (
-    <div className="flex flex-col gap-8">
+    <div
+      data-aos="fade-in"
+      data-aos-duration="2000"
+      data-aos-easing="ease-out"
+      className="flex flex-col gap-8"
+    >
       <div>
         <Title title="Photo" />
         <Title title="gallery" isDark={true} />
       </div>
       <div className="grid grid-cols-2 md:grid-cols-5 gap-1 md:gap-2">
         {photoGalleryImages.map((x) => (
-          <img src={`/assets/imgs/${x.link}.jpg`} className="h-56 md:h-72" />
+          <img src={`/assets/imgs/${x.link}.jpg`} className="h-56 md:h-96" />
         ))}
       </div>
     </div>

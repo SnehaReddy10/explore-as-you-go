@@ -1,8 +1,20 @@
 import Title from '../utils/Title';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 function MissionStatement() {
+  useEffect(() => {
+    Aos.init();
+  });
+
   return (
-    <div>
+    <div
+      className="my-20"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in"
+    >
       <Title title="Main Focus/Mission Statement" />
       <div className="flex flex-col md:flex-row gap-4 justify-around my-2">
         <div className="flex gap-3 items-center md:w-1/3">

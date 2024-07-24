@@ -1,10 +1,22 @@
+import { useEffect } from 'react';
 import Button from '../utils/Button';
 import Input from '../utils/Input';
 import Title from '../utils/Title';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 function ContactUs() {
+  useEffect(() => {
+    Aos.init();
+  });
+
   return (
-    <div className="flex flex-col md:gap-4">
+    <div
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in"
+      className="flex flex-col md:gap-4"
+    >
       <Title title="Contact us" />
       <div className="flex flex-col-reverse md:flex-row md:gap-4">
         <div className="w-1/3">

@@ -13,7 +13,7 @@ export default {
       white: '#FFFFFF',
     },
     animation: {
-      slideInRight: 'slideInRight 1s ease-in-out 1',
+      fadeIn: 'fadeIn 2s ease-in-out 1 forwards',
     },
   },
   plugins: [],
