@@ -6,7 +6,9 @@ function Button({ text, isDark, className, url }: any) {
     <Link
       to={url}
       className={`${className} flex gap-3 hover:gap-4 transition-all ease uppercase justify-center items-center w-40 h-10 text-xxs  tracking-wider p-4 ${
-        isDark ? 'bg-gray-9 text-white' : 'bg-white text-gray-9'
+        isDark
+          ? 'bg-gray-9 hover:bg-gray-10 text-white'
+          : 'bg-white text-gray-9 hover:bg-gray-2'
       }`}
     >
       {text}
