@@ -13,7 +13,9 @@ function Footer() {
   return (
     <div className="bg-gray-10 text-white pt-10 mt-10 max-md:px-4">
       <div className="flex flex-col max-md:items-center md:flex-row gap-5 justify-around text-xxs pb-10">
-        <Logo isDark={false} />
+        <div className="max-sm:scale-50">
+          <Logo isDark={false} />
+        </div>
         <div className="flex gap-8 md:gap-14">
           <div className="flex flex-col gap-1 md:gap-2">
             <p className="font-bold mb-1">Information</p>

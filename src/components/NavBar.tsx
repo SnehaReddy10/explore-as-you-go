@@ -31,8 +31,8 @@ function NavBar() {
   const [openMenu, setOpenMenu] = useState(false);
 
   return (
-    <div className="flex items-center justify-around my-4 md:mx-40">
-      <div>
+    <div className="flex items-center justify-between md:my-4 md:mx-40">
+      <div className="max-sm:scale-50">
         <Logo isDark={true} />
       </div>
       <div className="hidden mx-4 md:flex md:gap-4">
