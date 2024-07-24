@@ -65,8 +65,8 @@ function NavBar() {
               return (
                 <Link
                   onClick={() => setOpenMenu((x) => !x)}
-                  className={`uppercase px-2 md:px-3 text-xxs tracking-widest text-gray-9 hover:font-semibold ${
-                    isSelected ? 'border-y-[1px] border-gray-9' : ''
+                  className={`uppercase px-2 py-[2px] md:px-3 text-xxs tracking-widest text-gray-9 hover:font-semibold ${
+                    isSelected ? 'bg-gray-2' : ''
                   }`}
                   to={x.link}
                 >
