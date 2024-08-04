@@ -2,7 +2,7 @@
 
 ![Thumbnail](public/assets/imgs/thumbnail.png)
 
-![Go To Website](https://explore-as-you-go.vercel.app/)
+[Go To Website](https://explore-as-you-go.vercel.app/)
 
 A responsive tourist attraction website built using the MERN stack (MongoDB, Express, React, Node.js), styled with Tailwind CSS, and deployed using NGINX as a reverse proxy.
 
